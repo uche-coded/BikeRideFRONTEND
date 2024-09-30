@@ -4,10 +4,8 @@ import className from 'twrnc'
 import CustomButton from '@/components/CustomButton'
 import OnboardingImage from '@/components/OnboardingImage'
 import OnboardingCard from '@/components/OnboardingCard'
+import DotsStroke from '@/components/DotsStroke'
 
-const handlePress = () => {
-  console.log('Button Pressed!')
-}
 
 const onBoarding1 = () => {
   return (
@@ -19,8 +17,13 @@ const onBoarding1 = () => {
         body={
           'Register your bike with all the necessary details, create a riding group, and track your rides in real-time.'
         }
+        fillColor1={'bg-[#705AFD]'}
+        fillColor2={'bg-gray-300'}
+        fillColor3={'bg-gray-300'}
         btntxt1={'Next'}
         btntxt2={'Sign Up'}
+        href1={'/onBoarding2'}
+        href2={'/signUp'}
       />
     </View>
   )
